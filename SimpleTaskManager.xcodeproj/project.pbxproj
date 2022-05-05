@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E509D080282479B0008B3C19 /* SimpleTaskManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D07F282479B0008B3C19 /* SimpleTaskManagerApp.swift */; };
+		E509D082282479B0008B3C19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D081282479B0008B3C19 /* ContentView.swift */; };
+		E509D084282479B2008B3C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509D083282479B2008B3C19 /* Assets.xcassets */; };
+		E509D087282479B2008B3C19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E509D086282479B2008B3C19 /* Preview Assets.xcassets */; };
+		E509D089282479B2008B3C19 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D088282479B2008B3C19 /* Persistence.swift */; };
+		E509D08C282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E509D08A282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld */; };
+		E509D096282479B2008B3C19 /* SimpleTaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D095282479B2008B3C19 /* SimpleTaskManagerTests.swift */; };
+		E509D0A0282479B2008B3C19 /* SimpleTaskManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D09F282479B2008B3C19 /* SimpleTaskManagerUITests.swift */; };
+		E509D0A2282479B2008B3C19 /* SimpleTaskManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D0A1282479B2008B3C19 /* SimpleTaskManagerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E509D092282479B2008B3C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E509D074282479B0008B3C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E509D07B282479B0008B3C19;
+			remoteInfo = SimpleTaskManager;
+		};
+		E509D09C282479B2008B3C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E509D074282479B0008B3C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E509D07B282479B0008B3C19;
+			remoteInfo = SimpleTaskManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E509D07C282479B0008B3C19 /* SimpleTaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E509D07F282479B0008B3C19 /* SimpleTaskManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskManagerApp.swift; sourceTree = "<group>"; };
+		E509D081282479B0008B3C19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E509D083282479B2008B3C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E509D086282479B2008B3C19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E509D088282479B2008B3C19 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E509D08B282479B2008B3C19 /* SimpleTaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTaskManager.xcdatamodel; sourceTree = "<group>"; };
+		E509D091282479B2008B3C19 /* SimpleTaskManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTaskManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E509D095282479B2008B3C19 /* SimpleTaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskManagerTests.swift; sourceTree = "<group>"; };
+		E509D09B282479B2008B3C19 /* SimpleTaskManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTaskManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E509D09F282479B2008B3C19 /* SimpleTaskManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskManagerUITests.swift; sourceTree = "<group>"; };
+		E509D0A1282479B2008B3C19 /* SimpleTaskManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E509D079282479B0008B3C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D08E282479B2008B3C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D098282479B2008B3C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E509D073282479B0008B3C19 = {
+			isa = PBXGroup;
+			children = (
+				E509D07E282479B0008B3C19 /* SimpleTaskManager */,
+				E509D094282479B2008B3C19 /* SimpleTaskManagerTests */,
+				E509D09E282479B2008B3C19 /* SimpleTaskManagerUITests */,
+				E509D07D282479B0008B3C19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E509D07D282479B0008B3C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E509D07C282479B0008B3C19 /* SimpleTaskManager.app */,
+				E509D091282479B2008B3C19 /* SimpleTaskManagerTests.xctest */,
+				E509D09B282479B2008B3C19 /* SimpleTaskManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E509D07E282479B0008B3C19 /* SimpleTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				E509D07F282479B0008B3C19 /* SimpleTaskManagerApp.swift */,
+				E509D081282479B0008B3C19 /* ContentView.swift */,
+				E509D083282479B2008B3C19 /* Assets.xcassets */,
+				E509D088282479B2008B3C19 /* Persistence.swift */,
+				E509D08A282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld */,
+				E509D085282479B2008B3C19 /* Preview Content */,
+			);
+			path = SimpleTaskManager;
+			sourceTree = "<group>";
+		};
+		E509D085282479B2008B3C19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E509D086282479B2008B3C19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E509D094282479B2008B3C19 /* SimpleTaskManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E509D095282479B2008B3C19 /* SimpleTaskManagerTests.swift */,
+			);
+			path = SimpleTaskManagerTests;
+			sourceTree = "<group>";
+		};
+		E509D09E282479B2008B3C19 /* SimpleTaskManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E509D09F282479B2008B3C19 /* SimpleTaskManagerUITests.swift */,
+				E509D0A1282479B2008B3C19 /* SimpleTaskManagerUITestsLaunchTests.swift */,
+			);
+			path = SimpleTaskManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E509D07B282479B0008B3C19 /* SimpleTaskManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E509D0A5282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManager" */;
+			buildPhases = (
+				E509D078282479B0008B3C19 /* Sources */,
+				E509D079282479B0008B3C19 /* Frameworks */,
+				E509D07A282479B0008B3C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTaskManager;
+			productName = SimpleTaskManager;
+			productReference = E509D07C282479B0008B3C19 /* SimpleTaskManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E509D090282479B2008B3C19 /* SimpleTaskManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E509D0A8282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManagerTests" */;
+			buildPhases = (
+				E509D08D282479B2008B3C19 /* Sources */,
+				E509D08E282479B2008B3C19 /* Frameworks */,
+				E509D08F282479B2008B3C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E509D093282479B2008B3C19 /* PBXTargetDependency */,
+			);
+			name = SimpleTaskManagerTests;
+			productName = SimpleTaskManagerTests;
+			productReference = E509D091282479B2008B3C19 /* SimpleTaskManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E509D09A282479B2008B3C19 /* SimpleTaskManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E509D0AB282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManagerUITests" */;
+			buildPhases = (
+				E509D097282479B2008B3C19 /* Sources */,
+				E509D098282479B2008B3C19 /* Frameworks */,
+				E509D099282479B2008B3C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E509D09D282479B2008B3C19 /* PBXTargetDependency */,
+			);
+			name = SimpleTaskManagerUITests;
+			productName = SimpleTaskManagerUITests;
+			productReference = E509D09B282479B2008B3C19 /* SimpleTaskManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E509D074282479B0008B3C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E509D07B282479B0008B3C19 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E509D090282479B2008B3C19 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E509D07B282479B0008B3C19;
+					};
+					E509D09A282479B2008B3C19 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E509D07B282479B0008B3C19;
+					};
+				};
+			};
+			buildConfigurationList = E509D077282479B0008B3C19 /* Build configuration list for PBXProject "SimpleTaskManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E509D073282479B0008B3C19;
+			productRefGroup = E509D07D282479B0008B3C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E509D07B282479B0008B3C19 /* SimpleTaskManager */,
+				E509D090282479B2008B3C19 /* SimpleTaskManagerTests */,
+				E509D09A282479B2008B3C19 /* SimpleTaskManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E509D07A282479B0008B3C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E509D087282479B2008B3C19 /* Preview Assets.xcassets in Resources */,
+				E509D084282479B2008B3C19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D08F282479B2008B3C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D099282479B2008B3C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E509D078282479B0008B3C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E509D089282479B2008B3C19 /* Persistence.swift in Sources */,
+				E509D082282479B0008B3C19 /* ContentView.swift in Sources */,
+				E509D08C282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld in Sources */,
+				E509D080282479B0008B3C19 /* SimpleTaskManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D08D282479B2008B3C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E509D096282479B2008B3C19 /* SimpleTaskManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E509D097282479B2008B3C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E509D0A0282479B2008B3C19 /* SimpleTaskManagerUITests.swift in Sources */,
+				E509D0A2282479B2008B3C19 /* SimpleTaskManagerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E509D093282479B2008B3C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E509D07B282479B0008B3C19 /* SimpleTaskManager */;
+			targetProxy = E509D092282479B2008B3C19 /* PBXContainerItemProxy */;
+		};
+		E509D09D282479B2008B3C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E509D07B282479B0008B3C19 /* SimpleTaskManager */;
+			targetProxy = E509D09C282479B2008B3C19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E509D0A3282479B2008B3C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E509D0A4282479B2008B3C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E509D0A6282479B2008B3C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTaskManager/Preview Content\"";
+				DEVELOPMENT_TEAM = T799LQHP92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E509D0A7282479B2008B3C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTaskManager/Preview Content\"";
+				DEVELOPMENT_TEAM = T799LQHP92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E509D0A9282479B2008B3C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T799LQHP92;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTaskManager.app/SimpleTaskManager";
+			};
+			name = Debug;
+		};
+		E509D0AA282479B2008B3C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T799LQHP92;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTaskManager.app/SimpleTaskManager";
+			};
+			name = Release;
+		};
+		E509D0AC282479B2008B3C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T799LQHP92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTaskManager;
+			};
+			name = Debug;
+		};
+		E509D0AD282479B2008B3C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T799LQHP92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitaz.SimpleTaskManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTaskManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E509D077282479B0008B3C19 /* Build configuration list for PBXProject "SimpleTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E509D0A3282479B2008B3C19 /* Debug */,
+				E509D0A4282479B2008B3C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E509D0A5282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E509D0A6282479B2008B3C19 /* Debug */,
+				E509D0A7282479B2008B3C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E509D0A8282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E509D0A9282479B2008B3C19 /* Debug */,
+				E509D0AA282479B2008B3C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E509D0AB282479B2008B3C19 /* Build configuration list for PBXNativeTarget "SimpleTaskManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E509D0AC282479B2008B3C19 /* Debug */,
+				E509D0AD282479B2008B3C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E509D08A282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E509D08B282479B2008B3C19 /* SimpleTaskManager.xcdatamodel */,
+			);
+			currentVersion = E509D08B282479B2008B3C19 /* SimpleTaskManager.xcdatamodel */;
+			path = SimpleTaskManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E509D074282479B0008B3C19 /* Project object */;
+}
