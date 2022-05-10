@@ -76,7 +76,7 @@ struct AddNewTask: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .overlay(alignment: .bottomTrailing) {
                 Button {
-                    
+                    taskModel.showDatePicker.toggle()
                 } label: {
                     Image(systemName: "calendar")
                         .foregroundColor(.black)
@@ -140,7 +140,10 @@ struct AddNewTask: View {
             
             // MARK: Save Button
             Button {
-                
+                //MARK: If success Closing View
+                if taskModel.addTask(context: env.managedObjectContext) {
+                    env.dismiss()
+                }
             } label: {
                 Text("Save Task")
                     .font(.callout)
@@ -155,12 +158,34 @@ struct AddNewTask: View {
             }
             .frame(maxHeight: .infinity, alignment: .bottom)
             .padding(.bottom, 10)
-
+            .disabled(taskModel.taskTitle == "")
+            .opacity(taskModel.taskTitle == "" ? 0.6 : 1)
 
 
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding()
+        .overlay {
+            ZStack {
+                if taskModel.showDatePicker {
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            taskModel.showDatePicker = false
+                        }
+                    
+                    //MARK: Disabling Past Dates
+                    DatePicker.init("", selection: $taskModel.taskDeadline, in: Date.now...Date.distantFuture)
+                        .datePickerStyle(.graphical)
+                        .labelsHidden()
+                        .padding()
+                        .background(.white, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .padding()
+                }
+            }
+            .animation(.easeInOut, value: taskModel.showDatePicker)
+        }
     }
 }
 

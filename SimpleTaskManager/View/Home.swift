@@ -12,6 +12,12 @@ struct Home: View {
     // MARK: Matched Geometry Namespace
     @Namespace var animation
     
+    //MARK: Fetching Task
+    @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Task.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var tasks: FetchedResults<Task>
+    
+    //MARK: Environment Values
+    @Environment(\.self) var env
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -28,6 +34,7 @@ struct Home: View {
                     .padding(.top, 5)
                 
                 // MARK Task View
+                TaskView()
                 // Latter Will Come
             }
             .padding()
@@ -62,11 +69,99 @@ struct Home: View {
             }
 
         }
-        .fullScreenCover(isPresented: $taskModel.openEditTask) {
+        .fullScreenCover(isPresented: $taskModel.openEditTask, onDismiss: {
+            taskModel.resetTaskData()
+        }, content: {
             AddNewTask()
                 .environmentObject(taskModel)
+        })
+    }
+    
+    //MARK: TaskView
+    @ViewBuilder
+    func TaskView() -> some View {
+        LazyVStack(spacing: 20) {
+            ForEach(tasks) { task in
+                TaskRowView(task: task)
+            }
+        }
+        .padding(.top, 20)
+    }
+    
+    //MARK: TaskRowView
+    @ViewBuilder
+    func TaskRowView(task: Task) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Text(task.type ?? "")
+                    .font(.callout)
+                    .padding(.vertical, 5)
+                    .padding(.horizontal)
+                    .background {
+                        Capsule()
+                            .fill(.gray.opacity(0.3))
+                    }
+                Spacer()
+                
+                //MARK: Edit Button Only For Non Completed Tasks
+                if !task.isCompleted {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                            .foregroundColor(.black)
+                    }
+
+                    
+                }
+            }
+            
+            Text(task.title ?? "")
+                .font(.title2.bold())
+                .foregroundColor(.black)
+                .padding(.vertical, 10)
+            
+            HStack(alignment: .bottom, spacing: 0) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Label {
+                        Text((task.deadline ?? Date()).formatted(date: .long, time: .omitted))
+                    } icon: {
+                        Image(systemName: "calendar")
+                    }
+                    .font(.caption)
+                    
+                    Label {
+                        Text((task.deadline ?? Date()).formatted(date: .omitted, time: .shortened))
+                    } icon: {
+                        Image(systemName: "clock")
+                    }
+                    .font(.caption)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                if !task.isCompleted {
+                    Button {
+                        //MARK: Updating Core Data
+                        task.isCompleted.toggle()
+                        try? env.managedObjectContext.save()
+                    } label: {
+                        Circle()
+                            .strokeBorder(.black, lineWidth: 1.5)
+                            .frame(width: 25, height: 25)
+                            .contentShape(Circle())
+                    }
+
+                }
+            }
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background {
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Color(task.color ?? "Yellow"))
         }
     }
+
     
     //MARK: Custom Segmented Bar
     @ViewBuilder
