@@ -19,6 +19,7 @@
 		E509D0B128247B68008B3C19 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D0B028247B68008B3C19 /* Home.swift */; };
 		E509D0B328247E86008B3C19 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D0B228247E86008B3C19 /* TaskViewModel.swift */; };
 		E509D0B52824877F008B3C19 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D0B42824877F008B3C19 /* AddNewTask.swift */; };
+		E509D0B7282B1C22008B3C19 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509D0B6282B1C22008B3C19 /* DynamicFilteredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		E509D0B028247B68008B3C19 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E509D0B228247E86008B3C19 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		E509D0B42824877F008B3C19 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
+		E509D0B6282B1C22008B3C19 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				E509D0B028247B68008B3C19 /* Home.swift */,
 				E509D0B42824877F008B3C19 /* AddNewTask.swift */,
+				E509D0B6282B1C22008B3C19 /* DynamicFilteredView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				E509D089282479B2008B3C19 /* Persistence.swift in Sources */,
 				E509D0B328247E86008B3C19 /* TaskViewModel.swift in Sources */,
 				E509D082282479B0008B3C19 /* ContentView.swift in Sources */,
+				E509D0B7282B1C22008B3C19 /* DynamicFilteredView.swift in Sources */,
 				E509D0B128247B68008B3C19 /* Home.swift in Sources */,
 				E509D0B52824877F008B3C19 /* AddNewTask.swift in Sources */,
 				E509D08C282479B2008B3C19 /* SimpleTaskManager.xcdatamodeld in Sources */,
