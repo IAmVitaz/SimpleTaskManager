@@ -18,16 +18,28 @@ struct AddNewTask: View {
             Text("Edit Task")
                 .font(.title3.bold())
                 .frame(maxWidth: .infinity)
-                .overlay {
+                .overlay(alignment: .leading) {
                     Button {
                         env.dismiss()
                     } label: {
                         Image(systemName: "arrow.left")
                             .font(.title3)
                             .foregroundColor(.black)
-                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
-
+                }
+                .overlay(alignment: .trailing) {
+                    Button {
+                        if let editTask = taskModel.editTask {
+                            env.managedObjectContext.delete(editTask)
+                            try? env.managedObjectContext.save()
+                            env.dismiss()
+                        }
+                    } label: {
+                        Image(systemName: "trash")
+                            .font(.title3)
+                            .foregroundColor(.red)
+                    }
+                    .opacity(taskModel.editTask == nil ? 0 : 1)
                 }
             
             VStack(alignment: .leading, spacing: 12) {
